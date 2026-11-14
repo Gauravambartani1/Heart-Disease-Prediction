@@ -64,25 +64,6 @@ pip install -r requirements.txt
 streamlit run app.py
 ```
 
-The app opens at http://localhost:8501.
-
-`scikit-learn` and `torch` should match the versions you trained with, because the saved model files are version-sensitive. If you see an unpickling error, run `pip freeze` in your training environment and pin those versions in `requirements.txt`.
-
-## Deploy
-
-GitHub Pages only serves static files, so it can't run this app. Deploy it on [Streamlit Community Cloud](https://share.streamlit.io) instead, which is free and builds straight from this repository:
-
-1. Make sure `requirements.txt`, `app.py`, the model files and `.streamlit/config.toml` are committed.
-2. Sign in at https://share.streamlit.io with your GitHub account.
-3. Select **Create app**, then choose this repository, the branch, and `app.py` as the main file.
-4. Select **Deploy** and wait for the build to finish.
-
-## Limitations
-
-- The dataset is small (918 patients) and has not been checked on any outside population.
-- The imputers were fit on all rows before the train/test split, so test scores may be slightly optimistic.
-- The test set has 184 patients, so the metrics can shift by several points with a different split.
-
 ## Data source
 
 UCI Heart Disease dataset (Janosi, Steinbrunn, Pfisterer and Detrano), loaded in the notebook from the Kaggle copy `redwankarimsony/heart-disease-data`.
