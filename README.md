@@ -2,7 +2,7 @@
 
 A dark-mode Streamlit app that estimates a patient's risk of heart disease from 11 clinical readings. It runs two models trained on the UCI Heart Disease data and updates the result live as you change any input.
 
-**Live app:** https://YOUR-APP-NAME.streamlit.app *(replace after deploying)*
+**Live app:** https://heart-disease-prediction-mlp-lr.streamlit.app/ *(replace after deploying)*
 
 > **Not a medical device.** This project is for exploration and learning. It must not replace a clinician's judgment.
 
